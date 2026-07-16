@@ -79,9 +79,9 @@ def score_song(user_prefs: Dict, song: Dict) -> Tuple[float, List[str]]:
     """Score a single song against a user preference profile and return the score with reasons."""
     # Feature weights (priority order: genre, mood, energy, acousticness)
     weights = {
-        "genre": 0.40,
+        "genre": 0.20,
         "mood": 0.25,
-        "energy": 0.20,
+        "energy": 0.40,
         "acousticness": 0.15,
     }
 
